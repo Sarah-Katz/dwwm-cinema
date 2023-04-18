@@ -20,7 +20,7 @@ export default function Header() {
 
     return (
         <header>
-            <img src="/images/logo/logo2.jpg" alt="Logo du cinéma" />
+            <img src="/images/logo/logo.jpg" alt="Logo du cinéma" />
             <nav>
                 <Link className="header-link" to="/">Accueil</Link>
                 <Link className="header-link" to="/menuFilm">Films à l'affiche</Link>
