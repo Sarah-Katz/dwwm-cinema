@@ -1,0 +1,121 @@
+.detail-background {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.item-detail {
+  background-color: var(--mainThemeColor);
+  opacity: 0.95;
+  color: var(--fontColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60vw;
+  border-radius: 20px;
+  margin: 5% auto;
+  padding: 1%;
+  box-shadow: 2px 2px 20px black;
+}
+
+.item-title {
+  font-size: 4em;
+  margin: 1%;
+}
+
+.item-infos {
+  font-size: 1.5em;
+  text-align: justify;
+}
+
+.item-button {
+  border: none;
+  width: 200px;
+  height: 80px;
+  margin: auto;
+  border-radius: 10px;
+  background: #000;
+  color: #ffff;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.item-button:hover {
+  background: #fff;
+  color: #000;
+  transform: scale(1.03);
+  transition: all 0.2s ease-in-out;
+}
+
+.item-small-infos {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* Modal réservation */
+.item-reserv {
+  position: fixed;
+  top: 35%;
+  left: 35%;
+  width: 30%;
+  height: 30%;
+  background-color: #000;
+  border-radius: 20px;
+}
+
+.reserv-container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.reserv-button {
+  border: none;
+  width: 200px;
+  height: 50px;
+  margin: auto;
+  border-radius: 10px;
+  background: var(--mainThemeColor);
+  color: #ffff;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.reserv-button:hover {
+  background: #fff;
+  color: #000;
+  transform: scale(1.03);
+  transition: all 0.2s ease-in-out;
+}
+
+/*Responsive mobile*/
+@media screen and (max-width: 480px) {
+  .detail-background {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .item-detail {
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    max-height: 80vh;
+    overflow: scroll;
+    width: 85vw;
+    padding: 15px;
+  }
+
+  /* Modal réservation */
+  .item-reserv {
+    top: 30%;
+    left: 20%;
+    width: 60%;
+    height: 40%;
+  }
+}

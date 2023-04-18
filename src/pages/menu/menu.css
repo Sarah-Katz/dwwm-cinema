@@ -1,9 +1,3 @@
-/* preset  */
-:root {
-  --mainThemeColor: #141924;
-  --FontColor: #ffff;
-}
-
 .button-group-items {
   width: 100vw;
   height: 90vh;
@@ -42,7 +36,7 @@ button.menu-btn {
   transition: all 0.3s ease-in-out;
 }
 
-.menu-btn:hover .menu-cat-img{
+.menu-btn:hover .menu-cat-img {
   transform: scale(1.025);
   transition: all 0.3s ease-in-out;
 }
@@ -62,10 +56,25 @@ button.menu-btn {
   bottom: 20vh;
   width: 15vw;
   font-size: 32px;
-  color: var(--FontColor);
+  color: var(--fontColor);
   padding: 5px 15px;
   background: rgba(0, 0, 0, 0.65);
   border-radius: 10px;
 }
 
+/*Responsive mobile*/
+@media screen and (max-width: 480px) {
+  .button-group-items {
+    flex-direction: column;
+  }
 
+  .menu-btn {
+    margin: 5px;
+  }
+
+  .bgmTxt {
+    font-size: 1.8em;
+    bottom: unset;
+    width: 60vw;
+  }
+}

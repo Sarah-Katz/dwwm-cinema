@@ -84,7 +84,7 @@ export default function Form() {
                 {errors.subject && <p>{errors.subject}</p>}
             </div>
             <div className="form-input">
-                <label htmlFor="message">Contenu:</label>
+                <label htmlFor="message">Message:</label>
                 <textarea
                     id="message"
                     name="message"

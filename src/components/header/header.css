@@ -1,19 +1,7 @@
-/* font */
-* {
-    font-family: "Cuprum", sans-serif;
-    font-weight: 700;
-  }
-  
-/* preset  */
-:root {
-    --mainThemeColor: #141924;
-    --FontColor: #FFFF;
-  }
-  
 #contact-link{
     background: none;
     border: none;
-    color: var(--FontColor);
+    color: var(--fontColor);
     padding: 0 25px;
     font-size: 18px;
     font-weight: 800;

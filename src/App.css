@@ -7,12 +7,13 @@
 /* preset  */
 :root {
   --mainThemeColor: #141924;
-  --FontColor: #ffff;
+  --fontColor: #ffff;
 }
 
 body {
   min-height: 100vh;
   height: 100%;
+  margin: 0;
 }
 
 header {
@@ -44,7 +45,7 @@ nav {
 
 nav a {
   margin-left: 20px;
-  color: var(--FontColor);
+  color: var(--fontColor);
   text-decoration: none;
 }
 
@@ -80,7 +81,7 @@ p.description-chef {
   background: var(--mainThemeColor);
   padding: 15px;
   border-radius: 3px;
-  color: var(--FontColor);
+  color: var(--fontColor);
 }
 
 footer {
@@ -90,7 +91,7 @@ footer {
   width: 100%;
   background: var(--mainThemeColor);
   box-shadow: 2px 2px 20px black;
-  color: var(--FontColor);
+  color: var(--fontColor);
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -103,7 +104,7 @@ span.footer-text {
 
 footer i {
   font-size: 25px;
-  color: var(--FontColor);
+  color: var(--fontColor);
   margin-right: 15px;
 }
 
@@ -114,4 +115,11 @@ footer i:last-child {
 footer i:hover {
   transform: scale(1.2);
   color: orange;
+}
+
+/*Responsive mobile*/
+@media screen and (max-width: 480px) {
+  header > img {
+    display: none;
+  }
 }

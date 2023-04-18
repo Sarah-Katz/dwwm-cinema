@@ -60,12 +60,6 @@
   display: flex;
 }
 
-.dots {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .dot {
   width: 15px;
   height: 15px;
@@ -85,4 +79,22 @@
   opacity: 0.5;
   cursor: not-allowed;
   pointer-events: none;
+}
+
+/*Responsive mobile*/
+@media only screen and (max-width: 480px) {
+  .dots-container {
+    opacity: 0.7;
+    bottom: 20px;
+  }
+
+  .previous-button {
+    opacity: 0.7;
+    left: 10px;
+  }
+  
+  .next-button {
+    opacity: 0.7;
+    right: 10px;
+  }
 }
