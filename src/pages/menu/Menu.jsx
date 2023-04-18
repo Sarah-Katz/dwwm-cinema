@@ -1,30 +1,20 @@
 import './menu.css'
+import uuid from 'react-uuid';
+import { Link } from 'react-router-dom';
 
 function Menu({ items }) {
     return (
-        <div>
-            <div className="button-group-items">
-                <button className="menu-btn">
-                    <img className="menu-cat-img" src={items[0].src} alt="Starter Meal" />
-                    <div className="bgmTxt">{items[0].title}</div>
-                </button>
-                <button className="menu-btn">
-                    <img className="menu-cat-img" src={items[1].src} alt="meal" />
-                    <div className="bgmTxt">{items[1].title}</div>
-                </button>
-                <button className="menu-btn">
-                    <img className="menu-cat-img" src={items[2].src} alt="dessert" />
-                    <div className="bgmTxt">{items[2].title}</div>
-                </button>
-                <button className="menu-btn">
-                    <img className="menu-cat-img" src={items[3].src} alt="dessert" />
-                    <div className="bgmTxt">{items[3].title}</div>
-                </button>
-                <button className="menu-btn">
-                    <img className="menu-cat-img" src={items[4].src} alt="dessert" />
-                    <div className="bgmTxt">{items[4].title}</div>
-                </button>
-            </div>
+        <div className='button-group-items'>
+            {items.map((item, i) => {
+                return (
+                    <button key={uuid()} className="menu-btn">
+                        <Link className="menu-link" to="/detail" state={item}>
+                        <img className="menu-cat-img" src={item.src} alt={item.alt} />
+                        </Link>
+                        <div className="bgmTxt">{item.title}</div>
+                    </button>
+                );
+            })}
         </div>
     );
 }
