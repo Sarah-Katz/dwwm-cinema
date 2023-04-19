@@ -32,7 +32,7 @@ function Detail() {
                 <div className="item-reserv">
                     <div className='reserv-background'>
                         <div className="reserv-container">
-                            <button onClick={handleClick} id="contact-close-button" className='contact-close-button'><ImCross /></button>
+                            <button onClick={handleClick} id="reserv-close-button" className='reserv-close-button'><ImCross /></button>
                             <button className="reserv-button">14h30</button>
                             <button className="reserv-button">17h00</button>
                             <button className="reserv-button">20h00</button>

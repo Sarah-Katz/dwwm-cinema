@@ -44,6 +44,7 @@ form {
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  font-size: 1.8em;
 }
 
 .form-input {
