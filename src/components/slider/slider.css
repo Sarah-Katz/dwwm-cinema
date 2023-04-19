@@ -92,9 +92,16 @@
     opacity: 0.7;
     left: 10px;
   }
-  
+
   .next-button {
     opacity: 0.7;
     right: 10px;
+  }
+}
+
+/*Responsive tablette*/
+@media screen and (max-width: 1080px) and (min-width: 800px) {
+  .slider-image {
+    height: 89.5vh;
   }
 }

@@ -30,11 +30,13 @@ function Detail() {
             {/* Modal de réservation de séance */}
             {reserv &&
                 <div className="item-reserv">
-                    <button onClick={handleClick} id="contact-close-button" className='contact-close-button'><ImCross /></button>
-                    <div className="reserv-container">
-                        <button className="reserv-button">14h30</button>
-                        <button className="reserv-button">17h00</button>
-                        <button className="reserv-button">20h00</button>
+                    <div className='reserv-background'>
+                        <div className="reserv-container">
+                            <button onClick={handleClick} id="contact-close-button" className='contact-close-button'><ImCross /></button>
+                            <button className="reserv-button">14h30</button>
+                            <button className="reserv-button">17h00</button>
+                            <button className="reserv-button">20h00</button>
+                        </div>
                     </div>
                 </div>}
             <img src={item.src} alt={item.alt} className="detail-background" />

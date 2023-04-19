@@ -58,32 +58,30 @@
 }
 
 /* Modal réservation */
-.item-reserv {
-  position: fixed;
-  top: 35%;
-  left: 35%;
-  width: 30%;
-  height: 30%;
-  background-color: #000;
-  border-radius: 20px;
-}
-
 .reserv-container {
+  position: fixed;
+  z-index: 3;
   display: flex;
-  height: 100%;
+  top: 25%;
+  left: 40%;
+  height: 50%;
+  width: 20%;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  background: var(--mainThemeColor);
+  border-radius: 20px;
 }
 
 .reserv-button {
+  z-index: 3;
   border: none;
   width: 200px;
   height: 50px;
   margin: auto;
   border-radius: 10px;
-  background: var(--mainThemeColor);
-  color: #ffff;
+  background: #000;
+  color: #fff;
   font-size: 1.5em;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -96,8 +94,18 @@
   transition: all 0.2s ease-in-out;
 }
 
+.reserv-background {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
 /*Responsive mobile*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1080px) {
   .detail-background {
     height: 100%;
     object-fit: cover;
@@ -112,10 +120,21 @@
   }
 
   /* Modal réservation */
-  .item-reserv {
-    top: 30%;
+  .reserv-container {
+    top: 25%;
     left: 20%;
     width: 60%;
+    height: 50%;
+  }
+}
+
+/*Responsive tablette*/
+@media screen and (max-width: 1079px) and (min-width: 800px) {
+  /* Modal réservation */
+  .reserv-container {
+    top: 30%;
+    left: 30%;
+    width: 40%;
     height: 40%;
   }
 }

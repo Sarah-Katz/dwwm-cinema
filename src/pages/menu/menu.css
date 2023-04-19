@@ -69,7 +69,38 @@ button.menu-btn {
   }
 
   .menu-btn {
-    margin: 5px;
+    width: 100% !important;
+  }
+
+  .bgmTxt {
+    font-size: 1.8em;
+    bottom: unset;
+    width: 60vw;
+  }
+}
+
+/* Responsive mobile paysage */
+@media screen and (width: 926px) {
+  .button-group-items {
+    flex-direction: row !important;
+    height: 82vh;
+  }
+
+  .bgmTxt {
+    font-size: 1.8em;
+    bottom: 60px !important;
+    width: 15vw !important;
+  }
+}
+
+/*Responsive tablette*/
+@media screen and (max-width: 1079px) and (min-width: 800px) {
+  .button-group-items {
+    flex-direction: column;
+  }
+
+  .menu-btn {
+    width: 100% !important;
   }
 
   .bgmTxt {
