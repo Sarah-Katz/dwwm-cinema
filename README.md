@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# **Projet "Cinema"** - *Dev Web / Web Mobile*
+### *Technologies utilisées*
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![GIT](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# *Contexte du projet*
+Pour réviser nos bases et évaluer le niveau de chacun en début de formation, il nous ai demandé de réaliser le site d'un cinéma, seul le front est demandé et j'ai fait le choix personnel d'utiliser React pour continuer à apprendre plus sur cette technologie.
+___
+## *Critères de performance*
 
-## Available Scripts
 
-In the project directory, you can run:
+1. Accueil :
+- Une page d'accueil attrayante avec une bannière mettant en avant les derniers films à
+l'affiche, les acteurs populaires ou tout autre élément visuel accrocheur lié au cinéma.
+-  Un menu de navigation clair permettant d'accéder facilement aux autres pages du site.
+- Des sections présentant les nouvelles sorties de films, les films populaires ou les actualités du
+cinéma.
+- Un pied de page avec des informations de contact et des liens vers les réseaux sociaux.
+2. Films :
+- Une page dédiée aux films, avec un affichage clair et organisé des films disponibles.
+- Des fiches détaillées pour chaque film, incluant des informations telles que le synopsis, la
+bande-annonce, le casting, la date de sortie, les avis des utilisateurs, etc.
+3. Acteurs :
+- Une page consacrée aux acteurs, avec une liste des acteurs populaires
+- Des fiches détaillées pour chaque acteur, incluant des informations telles que la biographie, la
+filmographie, les récompenses, les photos, etc.
+4. Contact :
+- Une page de contact permettant aux utilisateurs de soumettre des commentaires, des
+questions ou des demandes de renseignements.
+- Un formulaire de contact fonctionnel avec des champs appropriés pour le nom, l'adresse e-
+mail, le sujet et le message.
+- Des informations de contact supplémentaires, telles que l'adresse postale, le numéro de
+téléphone, l'adresse e-mail de l'entreprise, etc.
+5. Design :
+- Un design attractif et cohérent en lien avec le thème du cinéma, avec l'utilisation de couleurs,
+de polices et d'images appropriées.
+- Une mise en page responsive qui s'adapte à différents appareils et tailles d'écran, pour une
+expérience utilisateur optimale sur ordinateurs de bureau, tablettes et smartphones.
+- Des éléments visuels tels que des images de films, d'acteurs ou de scènes de cinéma pour
+renforcer l'immersion dans le thème du cinéma.
+- Une navigation claire et intuitive pour permettre aux utilisateurs de trouver facilement les
+informations recherchées.
+6. Technologie :
+- Le site sera développé en HTML et CSS pour la structure, le design et la mise en page.
+- Le site sera responsive, c'est-à-dire qu'il s'adaptera automatiquement à différents appareils et
+tailles d'écran.
+- L'utilisation de bibliothèques ou de frameworks CSS tels que Bootstrap ne peut *PAS* être
+envisagée.
+- Le site devra être compatible avec les navigateurs web couramment utilisés, tels que Chrome,
+Firefox, Safari et Edge.
+___
+## **Authors**
+👤  ***Sarah Katz***
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<a href="https://github.com/Sarah-Katz"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></img></a>
+<a href="https://www.linkedin.com/in/sarah-katz-dev/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></img></a>
