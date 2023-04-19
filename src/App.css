@@ -117,6 +117,20 @@ footer i:hover {
   color: orange;
 }
 
+footer .footer-rgpd {
+  position: fixed;
+  left: 25px;
+  font-size: 1em;
+  color: var(--fontColor);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+footer .footer-rgpd:hover {
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+}
+
 /*Responsive mobile*/
 @media screen and (max-width: 480px) {
   header > img {
